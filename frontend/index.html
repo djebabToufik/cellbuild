@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="context">
+        <button onclick="get_test()">Tap here to make a test</button>
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div > -->
+
+
+<div class= "container">
+    
+    <button onclick="get_test()"> make test </button>
+    <button onclick="reset_scale()"> reset_scale</button>
+    <div id = 'wait' class="wait">
+        <div class="circle__box">
+            <div class="circle__wrapper circle__wrapper--right">
+              <div class="circle__whole circle__right"></div>
+            </div>
+            <div class="circle__wrapper circle__wrapper--left">
+              <div class="circle__whole circle__left"></div>
+            </div>
+          </div>
+    </div>
+
+    <div class="result" id=result>
+        <p><button onclick="remove_result()">Exit</button></p>
+        <p>
+            <label for="">Area cm2 :</label>
+            <label id ='area'></label>
+        </p>
+        <p>
+            <label for="">Thickness mm:</label>
+            <label id ='circumference'></label>
+        </p>
+        <p>
+            <label for="">Max cell size mm:</label>
+            <label id ='weight'></label>
+        </p>
+        <p>
+            <label for="">Average cell size mm:</label>
+            <label id ='thickness'></label>
+        </p>
+
+        <p>
+            <label for="">Min cell size mm</label>
+            <label id ='density'></label>
+        </p>
+
+        <p>
+            <img id="view" src="view.jpg" alt="">
+        </p>
+       
+        
+        
+        
+        
+    </div>
+</div>
+
+
+    
+</body>
+</html>
