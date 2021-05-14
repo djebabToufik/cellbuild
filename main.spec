@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['main.py'],
-             pathex=['/home/pi/Desktop/CELLBOX/src'],
+a = Analysis(['src/main.py'],
+             pathex=['/home/pi/Desktop/CELLBOX'],
              binaries=[],
              datas=[],
              hiddenimports=[],

@@ -1,8 +1,0 @@
-2021-05-06 19:41:30 controller    INFO  - initialisation of the camera module....
-2021-05-06 19:41:30 controller    INFO  - camera pins initialized
-2021-05-06 19:41:30 __main__      DEBUG - starting main loop
-2021-05-06 19:41:47 wsserver      INFO  - websocket url path : /quality_test_handler
-2021-05-06 19:41:47 wsserver      INFO  - data recevied from front end {'action': 'make_test', 'data': {'production_id': 5, 'supervisor_id': 7, 'weight': 0, 'Area': 0, 'circumference': 0, 'z': 0, 'density': 0, 'note': 'from IOTEXM100', 'csrfmiddlewaretoken': ''}} 
-2021-05-06 19:41:48 controller    INFO  - taking a picture with camera number -1
-2021-05-06 19:42:06 wsserver      DEBUG - sending data to client...
-2021-05-06 19:42:06 wsserver      DEBUG - data sent
