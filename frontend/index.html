@@ -1,85 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" href="index.css">
+
+    <!-- <link rel="stylesheet" href="Tindex.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document1</title>
+
+
+    <link rel="stylesheet" href="IOBOX_CSS.css">
+    <script src="node_modules/chart.js/dist/chart.min.js"></script>
+
 </head>
+
+<header>
+    <p><span id="IOTEX_head">IO<span id="IOTEX_head_color">TEX</span></span></p>
+    <hr id="first_lign">
+    <!-- <hr id="first_lign" color="yellow"> -->
+</header>
+
 <body>
-    <!-- <div class="context">
-        <button onclick="get_test()">Tap here to make a test</button>
-    </div>
 
+    <img id="logo_irrokeys_opacity" src="images/irrokeys logo.jpg" alt="logo irrokeys" width="300">
 
-<div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
-    </div > -->
+    <div class="container">
 
+        <div class="flexbox1">
+            <button onclick="get_test()"> Start Test </button>
+            <button onclick="reset_scale()"> Reset</button>
+            <!-- <button type="submit">Settings</button> -->
+            <button type="button" value="settings" onclick="document.location.href='settings.html';">Settings</button>
+        </div>
 
-<div class= "container">
-    
-    <button onclick="get_test()"> make test </button>
-    <button onclick="reset_scale()"> reset_scale</button>
-    <div id = 'wait' class="wait">
-        <div class="circle__box">
-            <div class="circle__wrapper circle__wrapper--right">
-              <div class="circle__whole circle__right"></div>
+        <div id='wait' class="wait">
+            <div class="circle__box">
+                <div class="circle__wrapper circle__wrapper--right">
+                    <div class="circle__whole circle__right"></div>
+                </div>
+                <div class="circle__wrapper circle__wrapper--left">
+                    <div class="circle__whole circle__left"></div>
+                </div>
             </div>
-            <div class="circle__wrapper circle__wrapper--left">
-              <div class="circle__whole circle__left"></div>
+        </div>
+
+        <div class="result" id=result>
+            <p><button onclick="remove_result()">Exit</button></p>
+            <p>
+                <label for="">Density kg/m3 :</label>
+                <label id='density'></label>
+            </p>
+            <p>
+                <label for="">Thickness mm:</label>
+                <label id='epaisseur'></label>
+            </p>
+            <p>
+                <label for="">weight g :</label>
+                <label id='weight'></label>
+            </p>
+            <p>
+                <label for="">volume cm3 :</label>
+                <label id='volume'></label>
+            </p>
+            <p>
+                <label for="">Area cm2 :</label>
+                <label id='surface'></label>
+            </p>
+            <p>
+                <label for=""> perimeter cm:</label>
+                <label id='peri'></label>
+            </p>
+            <p>
+                <label for="">nbr cells detected:</label>
+                <label id='effectif'></label>
+            </p>
+            <p>
+                <label for="">Average cell size mm:</label>
+                <label id='moy_diam'></label>
+            </p>
+            <p>
+                <label for="">standard deviation mm:</label>
+                <label id='ecartype'></label>
+            </p>
+            <p>
+                <label for="">variance</label>
+                <label id='variance'></label>
+            </p>
+
+            <p>
+                <img id="view" src="viewtest.jpg" alt="photo result">
+            </p>
+
+            <div id="felxbox2">
+                <canvas id="graph_cell_diam"></canvas>
             </div>
-          </div>
+
+            <div id="felxbox2">
+                <canvas id="vect_cell_ord"></canvas>
+            </div>
+
+
+
+        </div>
     </div>
 
-    <div class="result" id=result>
-        <p><button onclick="remove_result()">Exit</button></p>
-        <p>
-            <label for="">Area cm2 :</label>
-            <label id ='area'></label>
-        </p>
-        <p>
-            <label for="">Thickness mm:</label>
-            <label id ='circumference'></label>
-        </p>
-        <p>
-            <label for="">Max cell size mm:</label>
-            <label id ='weight'></label>
-        </p>
-        <p>
-            <label for="">Average cell size mm:</label>
-            <label id ='thickness'></label>
-        </p>
-
-        <p>
-            <label for="">Min cell size mm</label>
-            <label id ='density'></label>
-        </p>
-
-        <p>
-            <img id="view" src="view.jpg" alt="">
-        </p>
-       
-        
-        
-        
-        
-    </div>
-</div>
 
 
-    
+
+    <!-- <div>
+    <canvas id="myChart"></canvas>
+</div> -->
+
+    <script type="text/javascript" src="Tindex.js"></script>
 </body>
+
 </html>
